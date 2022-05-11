@@ -4,13 +4,14 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #f0f0f0;
+  background-color: black;
 }
 
 h1 {
   font-family: "Montserrat", sans-serif;
   margin: 50px 0 30px;
   text-align: center;
+  color: pink;
 }
 
 .faq-container {
@@ -20,7 +21,7 @@ h1 {
 
 .faq {
   background-color: transparent;
-  border: 1px solid #9fa4a8;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   margin: 20px 0;
   padding: 30px;
@@ -32,6 +33,11 @@ h1 {
 .faq.active {
   background-color: #fff;
   box-shadow: 10px 10px rgb(233, 53, 83);
+}
+
+.faq.active .faq-title {
+  margin: 0 35px 0 0;
+  color: rgb(0, 0, 0);
 }
 
 .faq.active::before,
@@ -56,6 +62,7 @@ h1 {
 
 .faq-title {
   margin: 0 35px 0 0;
+  color: aliceblue;
 }
 
 .faq-text {
@@ -90,6 +97,11 @@ h1 {
 
 .faq-toggle .fa-xmark {
   display: none;
+  color: black;
+}
+
+.faq-toggle .fa-chevron-down {
+  color: #fff;
 }
 
 .faq.active .faq-toggle .fa-xmark {
